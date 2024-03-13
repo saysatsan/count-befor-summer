@@ -1,0 +1,33 @@
+let daysElement = document.getElementById('days');
+let hoursElement = document.getElementById('hours');
+let minutesElement = document.getElementById('minutes');
+let secondsElement = document.getElementById('seconds');
+const timer = document.querySelector('.countdown');
+
+function countdown() {
+  let targetDate = new Date('2024-06-01T00:00:00');
+  let now = new Date();
+  let difference = targetDate - now;
+
+  let days = Math.floor(difference / 1000 / 60 / 60 / 24);
+  let hours = Math.floor(difference / 1000 / 60 / 60) % 24;
+  let minutes = Math.floor(difference / 1000 / 60) % 60;
+  let seconds = Math.floor(difference / 1000) % 60;
+
+  daysElement.innerText = days;
+  hoursElement.innerText = hours;
+  minutesElement.innerText = minutes;
+  secondsElement.innerText = seconds;
+
+  if (difference < 0) {
+    timer.style.display = 'none';
+    document.getElementById('end').style.display = 'block';
+  }
+  
+  
+}
+
+// countdown();
+
+setInterval(countdown, 1000);
+

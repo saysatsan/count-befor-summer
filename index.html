@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Зворотній відлік часу до початку літа</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="backgraund_img">      
+        <video autoplay muted loop id="myVideo">
+          <source src="./ocean-65560.mp4" type="video/webm">        
+        </video>
+        <audio autoplay muted controls>
+          <source src="./gentle-ocean-waves-birdsong-and-gull-7109.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div class="countdown">
+          <h1>до літа залишилось:</h1>
+          <div class="timer">
+            <div class="timebox"><span id="days"></span> днів</div>
+            <span>:</span>
+            <div class="timebox"><span id="hours"></span> годин</div>
+            <span>:</span>
+            <div class="timebox"><span id="minutes"></span> хвилин</div>
+            <span>:</span>
+            <div class="timebox"><span id="seconds"></span> секунд</div>
+          </div>
+        </div>
+        <div id="end">
+          <h1>Літо настало!</h1>
+        </div>      
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
