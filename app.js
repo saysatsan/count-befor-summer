@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Запуск аудіо
-  if (audio) {
-      audio.autoplay = true;
-      audio.muted = true; // Потрібно включити вимкнення звуку для Safari
-  }
+  // if (audio) {
+  //     audio.autoplay = true;
+  //     audio.muted = true; // Потрібно включити вимкнення звуку для Safari
+  // }
 });
  document.addEventListener('click', function() {
     audio.play();
