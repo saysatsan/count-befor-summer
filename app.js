@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Запуск аудіо
   if (audio) {
-      // audio.autoplay = true;
+      audio.autoplay = true;
       audio.muted = true; // Потрібно включити вимкнення звуку для Safari
   }
 });
