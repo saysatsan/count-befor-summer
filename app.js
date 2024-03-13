@@ -4,6 +4,25 @@ let minutesElement = document.getElementById('minutes');
 let secondsElement = document.getElementById('seconds');
 const timer = document.querySelector('.countdown');
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Отримання відео та аудіо елементів
+  var video = document.getElementById('myVideo');
+  var audio = document.querySelector('audio');
+
+  // Запуск відео
+  if (video) {
+      video.autoplay = true;
+      video.muted = true; // Потрібно включити вимкнення звуку для Safari
+      video.loop = true;
+  }
+
+  // Запуск аудіо
+  if (audio) {
+      audio.autoplay = true;
+      audio.muted = true; // Потрібно включити вимкнення звуку для Safari
+  }
+});
+
 function countdown() {
   let targetDate = new Date('2024-06-01T00:00:00');
   let now = new Date();
