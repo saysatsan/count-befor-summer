@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var video = document.getElementById('myVideo');
   var audio = document.querySelector('audio');
 
+  document.addEventListener('click', function() {
+    audio.play();
+  });
+
   // Запуск відео
   if (video) {
       video.autoplay = true; // Потрібно включити вимкнення звуку для Safari
