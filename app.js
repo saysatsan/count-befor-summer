@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Запуск відео
   if (video) {
-      video.autoplay = true;
-      video.muted = true; // Потрібно включити вимкнення звуку для Safari
+      video.autoplay = true; // Потрібно включити вимкнення звуку для Safari
       video.loop = true;
   }
 
