@@ -9,9 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var video = document.getElementById('myVideo');
   var audio = document.querySelector('audio');
 
-  document.addEventListener('click', function() {
-    audio.play();
-  });
+ 
 
   // Запуск відео
   if (video) {
@@ -25,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
       audio.muted = true; // Потрібно включити вимкнення звуку для Safari
   }
 });
+ document.addEventListener('click', function() {
+    audio.play();
+  });
 
 function countdown() {
   let targetDate = new Date('2024-06-01T00:00:00');
